@@ -18,7 +18,7 @@ class Register extends React.Component {
     onNameChange = event => this.setState({name: event.target.value});
 
     onSubmitRegister = () => {
-        fetch('https://salty-island-97623.herokuapp.com/register',{
+        fetch('http://localhost:3000/register',{
             method: 'post',
             headers: {'Content-type':'application/json'},
             body: JSON.stringify({

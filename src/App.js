@@ -78,7 +78,7 @@ class App extends Component {
 
   onPictureSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://salty-island-97623.herokuapp.com/imageurl',{
+      fetch('http://localhost:3000/imageurl',{
         method: 'post',
         headers: {'Content-type':'application/json'},
         body: JSON.stringify({
@@ -88,7 +88,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if(response) {
-          fetch('https://salty-island-97623.herokuapp.com/image',{
+          fetch('http://localhost:3000/image',{
             method: 'put',
             headers: {'Content-type':'application/json'},
             body: JSON.stringify({
