@@ -1,4 +1,4 @@
-#React Application using PosgreSQL Database and server-api.
+#React Application using PostgreSQL Database and server-api.
 
 Link for working service on #heroku:
 
